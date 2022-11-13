@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Authors>Eduardo Fonseca B.</Authors>
+    <Company>PTI Costa Rica</Company>
+    <Copyright>PTI Costa Rica</Copyright>
+    <Description>Allows you to interact with Microsoft Azure Blob Storage easily.</Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseFile>License.txt</PackageLicenseFile>
+    <Version>7.0.0.0</Version>
+    <PackageProjectUrl>https://github.com/efonsecab/PTI.Microservices.Library</PackageProjectUrl>
+    <AnalysisLevel>latest</AnalysisLevel>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="7.0.0" />
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.14.1" />
+    <PackageReference Include="PTI.Microservices.Library.Core" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="License.txt" />
+    <None Update="README.md">
+      <PackagePath>\</PackagePath>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Pack>True</Pack>
+    </None>
+    <None Include="License.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
