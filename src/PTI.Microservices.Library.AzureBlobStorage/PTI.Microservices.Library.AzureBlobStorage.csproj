@@ -9,12 +9,14 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseFile>License.txt</PackageLicenseFile>
-    <Version>7.0.0.0</Version>
-    <PackageProjectUrl>https://github.com/efonsecab/PTI.Microservices.Library</PackageProjectUrl>
+    <Version>7.0.0.1</Version>
+    <PackageProjectUrl>https://github.com/efonsecab/PTI.Microservices.Library.AzureBlobStorage</PackageProjectUrl>
     <AnalysisLevel>latest</AnalysisLevel>
     <EnableNETAnalyzers>true</EnableNETAnalyzers>
     <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <IncludeSymbols>True</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
 
   <ItemGroup>
